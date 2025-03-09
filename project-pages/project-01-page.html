@@ -11,29 +11,45 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Qwigley&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/project-page.css" />
   </head>
   <body>
     <header>
+      <a href="/index.html" class="logo">Chadew</a>
       <nav>
-        <a href="/index.html">LOGO</a>
-        <a href="/index.html">Home</a>
-        <a href="/about-page.html">About</a>
-        <a href="/#project-section">Project</a>
-        <a href="/contact-page.html">Contact</a>
+        <ul id="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about-page.html">About</a></li>
+          <li><a href="/#project-section">Project</a></li>
+          <li><a href="/contact-page.html">Contact</a></li>
+        </ul>
       </nav>
     </header>
-    <br /><br />
+    <a href="/contact-page.html" id="contact-link">
+      <i class="fa-regular fa-envelope"></i>
+    </a>
 
     <main>
-      <section>
-        <h4>Project</h4>
-        <h2>Art Gallery Management System</h2>
-
-        <h4>My Role</h4>
-        <p>Full Stack Developer</p>
-
-        <h4>Year</h4>
-        <p>2024</p>
+      <section id="project-detail">
+        <div>
+          <h4>Project</h4>
+          <h2>Art Gallery <br />Management System</h2>
+          <br /><br />
+          <h4>My Role</h4>
+          <p>Full Stack Developer</p>
+          <br /><br />
+          <h4>Year</h4>
+          <p>2024</p>
+        </div>
 
         <div>
           <p>
@@ -46,7 +62,7 @@
             to enhance operational efficiency.
           </p>
 
-          <div>
+          <div id="project-resource-links">
             <img
               src="/assests/images/icon-github.png"
               alt="github-icon"
@@ -60,96 +76,79 @@
           </div>
         </div>
       </section>
-      <br /><br /><br />
 
-      <section>
+      <section id="project-images">
         <div>
           <img
             src="/assests/images/project-images/project-agms-img1.png"
             alt="project-imgage"
-            style="width: 1180px; height: 650px"
           />
-          <br />
           <img
             src="/assests/images/project-images/project-agms-img2.png"
             alt="project-imgage"
-            style="width: 1180px; height: 500px"
           />
-          <br />
           <img
             src="/assests/images/project-images/project-agms-img3.png"
             alt="project-imgage"
-            style="width: 1180px; height: 690px"
           />
-          <br />
           <img
             src="/assests/images/project-images/project-agms-img4.png"
             alt="project-imgage"
-            style="width: 575px; height: 375px"
           />
-          <br />
         </div>
       </section>
-      <br /><br /><br />
 
-      <section>
-        <b>Thanks for watching</b>
-        <br />
-        <a href="/index.html/#project-section"
-          ><u><b>Next Project</b> <i class="fa-solid fa-arrow-right"></i> </u>
+      <section id="navigate-section">
+        <span>Thanks for watching</span>
+        <a href="/#project-section"
+          >Next Project <i class="fa-solid fa-arrow-right"></i>
         </a>
-        <br /><br /><br />
       </section>
-      <br /><br /><br />
     </main>
 
     <footer>
       <hr />
-      <br /><br />
-      <a href="index.html">LOGO</a>
-      <br /><br />
-      <div>
-        <b>Contact Information</b>
-        <br />
-        Feel free to reach me out anytime.
-        <br />
-        <img
-          src="/assests/images/icon-email.png"
-          alt="email: "
-          style="width: 20px; height: 20px"
-        />
-        chanuthdewhan273@gmail.com
-      </div>
-
-      <br />
 
       <div>
-        <b>Follow me on</b>
-        <br />
-        You can find me below platform.
-        <br />
-        <img
-          src="/assests/images/icon-linkedin.png"
-          alt="contact"
-          style="width: 28px; height: 28px"
-        />
-        <img
-          src="/assests/images/icon-github.png"
-          alt="contact"
-          style="width: 28px; height: 28px"
-        />
+        <a href="index.html" class="logo">Chadew</a>
+
+        <ul>
+          <li>Contact Information -</li>
+          <li>Feel free to reach me out anytime.</li>
+          <li>
+            <span class="profiles">
+              <img
+                src="/assests/images/icon-email.png"
+                alt="email-icon "
+                class="footer-icon"
+                style="margin-right: 10px"
+              />
+              chanuthdewhan273@gmail.com</span
+            >
+          </li>
+        </ul>
+
+        <ul>
+          <li>Follow me on -</li>
+          <li>You can find me below platform.</li>
+          <li>
+            <span
+              ><img
+                src="/assests/images/icon-linkedin.png"
+                alt="linkedin-icon"
+                class="footer-icon" />
+              <img
+                src="/assests/images/icon-github.png"
+                alt="github-icon"
+                class="footer-icon"
+            /></span>
+          </li>
+        </ul>
       </div>
-      <br />
-      <a href="/contact-page.html">
-        <div>
-          <img
-            src="/assests/images/contact.png"
-            alt="contact"
-            style="width: 60px; height: 60px"
-          />
-        </div>
-      </a>
-      <p>&copy; Alright reserved.</p>
+
+      <span id="copyright-notice"
+        >&copy; 2025 Chanuth Dewhan. Alright reserved.</span
+      >
     </footer>
   </body>
 </html>
