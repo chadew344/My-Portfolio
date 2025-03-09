@@ -4,114 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chanuth Dewhan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Qwigley&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/contact-page.css" />
   </head>
   <body>
     <header>
+      <a href="/index.html" class="logo">Chadew</a>
       <nav>
-        <a href="/index.html">LOGO</a>
-        <a href="/index.html">Home</a>
-        <a href="/about-page.html">About</a>
-        <a href="/#project-section">Project</a>
-        <a href="/contact-page.html">Contact</a>
+        <ul id="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about-page.html">About</a></li>
+          <li><a href="/#project-section">Project</a></li>
+          <li><a href="/contact-page.html">Contact</a></li>
+        </ul>
       </nav>
     </header>
-    <br /><br />
+    <a href="/contact-page.html" id="contact-link">
+      <i class="fa-regular fa-envelope"></i>
+    </a>
+
     <main>
       <section>
         <h4>GET IN TOUCH — LET’S WORK TOGETHER</h4>
-        <br />
 
-        <form action="/contact-form" method="post">
+        <form action="/contact-form" method="post" id="contact-form">
           <div>
-            <label for="submitter-name">Your Name*</label>
-            <br />
-            <input
-              type="text"
-              name="submitter-name"
-              id="submitter-name"
-              required
-            />
+            <div class="field-box">
+              <label for="submitter-name">Your Name*</label>
+              <input
+                type="text"
+                name="submitter-name"
+                id="submitter-name"
+                required
+              />
+            </div>
+            <div class="field-box">
+              <label for="submitter-email">Your Email*</label>
+              <input
+                type="text"
+                name="submitter-email"
+                id="submitter-email"
+                required
+              />
+            </div>
           </div>
-          <br />
-          <div>
-            <label for="submitter-email">Your Email*</label>
-            <br />
-            <input
-              type="text"
-              name="submitter-email"
-              id="submitter-email"
-              required
-            />
-          </div>
-          <br />
-          <div>
+
+          <div class="field-box">
             <label for="subject">Subject*</label>
-            <br />
             <input type="text" name="subject" id="subject" required />
           </div>
-          <br />
-          <div>
+          <div class="field-box">
             <label for="subject">Message*</label>
-            <br />
-            <textarea
-              name="message"
-              id="message"
-              style="width: 600px; height: 100px"
-            ></textarea>
+            <textarea name="message" id="message" required></textarea>
           </div>
-          <br />
           <button type="submit">Submit</button>
         </form>
       </section>
-      <br /><br />
     </main>
 
-    <hr />
     <footer>
-      <a href="index.html">LOGO</a>
-      <br /><br />
+      <hr />
       <div>
-        <b>Contact Information</b>
-        <br />
-        Feel free to reach me out anytime.
-        <br />
-        <img
-          src="/assests/images/icon-email.png"
-          alt="email: "
-          style="width: 20px; height: 20px"
-        />
-        chanuthdewhan273@gmail.com
+        <a href="index.html" class="logo">Chadew</a>
+
+        <ul>
+          <li>Contact Information -</li>
+          <li>Feel free to reach me out anytime.</li>
+          <li>
+            <span class="profiles">
+              <img
+                src="/assests/images/icon-email.png"
+                alt="email-icon "
+                class="footer-icon"
+                style="margin-right: 10px"
+              />
+              chanuthdewhan273@gmail.com</span
+            >
+          </li>
+        </ul>
+
+        <ul>
+          <li>Follow me on -</li>
+          <li>You can find me below platform.</li>
+          <li>
+            <span
+              ><img
+                src="/assests/images/icon-linkedin.png"
+                alt="linkedin-icon"
+                class="footer-icon" />
+              <img
+                src="/assests/images/icon-github.png"
+                alt="github-icon"
+                class="footer-icon"
+            /></span>
+          </li>
+        </ul>
       </div>
 
-      <br />
-
-      <div>
-        <b>Follow me on</b>
-        <br />
-        You can find me below platform.
-        <br />
-        <img
-          src="/assests/images/icon-linkedin.png"
-          alt="contact"
-          style="width: 28px; height: 28px"
-        />
-        <img
-          src="/assests/images/icon-github.png"
-          alt="contact"
-          style="width: 28px; height: 28px"
-        />
-      </div>
-      <br />
-      <a href="/contact-page.html">
-        <div>
-          <img
-            src="/assests/images/contact.png"
-            alt="contact"
-            style="width: 60px; height: 60px"
-          />
-        </div>
-      </a>
-      <p>&copy; Alright reserved.</p>
+      <span id="copyright-notice"
+        >&copy; 2025 Chanuth Dewhan. Alright reserved.</span
+      >
     </footer>
   </body>
 </html>
