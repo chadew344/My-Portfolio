@@ -34,9 +34,9 @@
         </ul>
       </nav>
 
-      <span id="burger-icon">
+      <button onclick="openMenuPage()" id="burger-icon">
         <i class="fa-solid fa-bars"></i>
-      </span>
+      </button>
     </header>
     <a href="/contact-page.html" id="contact-link">
       <i class="fa-regular fa-envelope"></i>
@@ -136,5 +136,11 @@
         >&copy; 2025 Chanuth Dewhan. Alright reserved.</span
       >
     </footer>
+
+    <script>
+      function openMenuPage() {
+        window.location.href = "/menu-page.html";
+      }
+    </script>
   </body>
 </html>

@@ -1,7 +1,7 @@
-body {
+/* body {
   margin: 0;
   overflow-x: hidden;
-  /* background-color: rgb(238, 231, 219); */
+  background-color: rgb(238, 231, 219);
   font-family: "Petrona", serif;
   font-size: clamp(18px, 3vw, 24px);
 
@@ -73,7 +73,7 @@ nav ul li {
 #nav-links a:hover {
   font-weight: bold;
   transform: scale(1.5);
-}
+} */
 
 #hero-section {
   display: flex;
@@ -150,6 +150,13 @@ section:not(#hero-section) {
   justify-content: center;
 }
 
+.container {
+  width: 100%;
+  height: 90%;
+  display: grid;
+  column-gap: clamp(30px, 5vw, 50px);
+}
+
 #project-section .container {
   grid-template-columns: repeat(2, 1fr);
   column-gap: clamp(30px, 5vw, 50px);
@@ -186,7 +193,7 @@ section:not(#hero-section) {
   margin-bottom: clamp(10px, 5vh, 60px);
 }
 
-#sevice-section .container {
+#service-section .container {
   grid-template-columns: repeat(3, 1fr);
   column-gap: clamp(30px, 5vw, 50px);
 }
@@ -231,12 +238,12 @@ section:not(#hero-section) {
 }
 
 @media screen and (max-width: 1350px) {
-  #sevice-section .container {
+  #service-section .container {
     grid-template-columns: repeat(2, 1fr);
     row-gap: clamp(30px, 5vw, 50px);
   }
 
-  #sevice-section .container div:last-child {
+  #service-section .container div:last-child {
     grid-column: 1 / 3;
     justify-self: center;
   }
@@ -274,9 +281,14 @@ section:not(#hero-section) {
     row-gap: clamp(30px, 5vw, 50px);
   }
 
-  #sevice-section .container {
+  #service-section .container {
     grid-template-columns: repeat(1, 1fr);
     row-gap: clamp(30px, 5vw, 50px);
+  }
+
+  #service-section .container div:last-child {
+    grid-column: 1 / 1;
+    justify-self: center;
   }
 
   #technology-section div {

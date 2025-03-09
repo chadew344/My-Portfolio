@@ -19,8 +19,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
   </head>
   <body>
     <header>
@@ -34,19 +34,9 @@
         </ul>
       </nav>
 
-      <span id="burger-icon">
+      <button onclick="openMenuPage()" id="burger-icon">
         <i class="fa-solid fa-bars"></i>
-      </span>
-
-      <!-- <nav id="menu-panel">
-        <button type="submit" id="close-btn">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Service</a>
-        <a href="">Contact Us</a>
-      </nav> -->
+      </button>
     </header>
     <a href="/contact-page.html" id="contact-link">
       <i class="fa-regular fa-envelope"></i>
@@ -97,7 +87,7 @@
         </div>
       </section>
 
-      <section id="sevice-section">
+      <section id="service-section">
         <h2>Services</h2>
 
         <div class="container">
@@ -193,5 +183,11 @@
         >&copy; 2025 Chanuth Dewhan. Alright reserved.</span
       >
     </footer>
+
+    <script>
+      function openMenuPage() {
+        window.location.href = "/menu-page.html";
+      }
+    </script>
   </body>
 </html>

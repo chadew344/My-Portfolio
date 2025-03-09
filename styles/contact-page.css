@@ -1,3 +1,7 @@
+body {
+  min-height: 100vh;
+}
+
 section {
   width: 70%;
   margin-top: clamp(72px, 5vw, 145px);
@@ -88,6 +92,12 @@ section h4 {
   }
 
   #contact-form div:first-child .field-box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 594px) {
+  section {
     width: 100%;
   }
 }

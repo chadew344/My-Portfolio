@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+}
+
+.logo {
+  color: white;
+}
+
+button {
+  color: white;
+}
+
+#nav-links {
+  margin-top: clamp(72px, 5vw, 145px);
+}
+
+#nav-links li {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+#nav-links a {
+  color: white;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  #nav-links {
+    display: block;
+  }
+}
