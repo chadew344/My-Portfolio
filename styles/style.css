@@ -59,6 +59,14 @@ ul {
   opacity: 0.5;
 }
 
+#burger-icon {
+  position: relative;
+  font-size: 42px;
+  top: 0;
+  right: 3%;
+  display: none;
+}
+
 nav ul li {
   margin-left: clamp(30px, 6vw, 120px);
   display: inline;
@@ -156,7 +164,7 @@ footer > div {
 
 .profiles {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -197,4 +205,37 @@ footer div div:first-child {
 
 #contact-link:hover {
   scale: 1.1;
+}
+
+@media screen and (max-width: 1024px) {
+  footer > div a:nth-child(1) {
+    order: 3;
+    width: 100%;
+  }
+
+  footer > div ul:nth-child(2) {
+    order: 1;
+  }
+
+  footer > div ul:nth-child(3) {
+    order: 2;
+  }
+
+  footer > div {
+    flex-wrap: wrap;
+  }
+
+  #nav-links {
+    display: none;
+  }
+
+  #burger-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer > div ul:nth-child(2) {
+    width: 100%;
+  }
 }
