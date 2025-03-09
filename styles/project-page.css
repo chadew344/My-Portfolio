@@ -44,3 +44,14 @@ p {
 #project-images img {
   width: 100%;
 }
+
+@media screen and (max-width: 1024px) {
+  #project-detail {
+    flex-direction: column;
+  }
+
+  #project-detail > div {
+    margin-top: 40px;
+    width: 100%;
+  }
+}
