@@ -11,51 +11,63 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Qwigley&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/about-page.css" />
   </head>
   <body>
     <header>
+      <a href="/index.html" class="logo">Chadew</a>
       <nav>
-        <a href="/index.html">LOGO</a>
-        <a href="/index.html">Home</a>
-        <a href="/about-page.html">About</a>
-        <a href="/#project-section">Project</a>
-        <a href="/contact-page.html">Contact</a>
+        <ul id="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about-page.html">About</a></li>
+          <li><a href="/#project-section">Project</a></li>
+          <li><a href="/contact-page.html">Contact</a></li>
+        </ul>
       </nav>
     </header>
-    <br /><br />
+    <a href="/contact-page.html" id="contact-link">
+      <i class="fa-regular fa-envelope"></i>
+    </a>
 
     <main>
-      <section>
-        <h4>A FEW WORDS ABOUT ME</h4>
-        <br />
-        <p>
-          I am Chanuth Dewhan, a dedicated and enthusiastic student with a
-          passion for learning and exploration. While I may still be in the
-          early stages of my career, my commitment to hard work and my eagerness
-          to embrace new challenges drive me to continuously expand my knowledge
-          and skills. I thrive in environments that encourage creativity and
-          innovation, and I am always on the lookout for opportunities to grow
-          both personally and professionally. My curiosity fuels my desire to
-          explore diverse fields and gain insights that will shape my future
-          endeavors.
-        </p>
+      <section id="about-section">
+        <h4 class="sub-title">A FEW WORDS ABOUT ME</h4>
+        <div class="content">
+          <p>
+            I am Chanuth Dewhan, a dedicated and enthusiastic student with a
+            passion for learning and exploration. While I may still be in the
+            early stages of my career, my commitment to hard work and my
+            eagerness to embrace new challenges drive me to continuously expand
+            my knowledge and skills. I thrive in environments that encourage
+            creativity and innovation, and I am always on the lookout for
+            opportunities to grow both personally and professionally. My
+            curiosity fuels my desire to explore diverse fields and gain
+            insights that will shape my future endeavors.
+          </p>
 
-        <p>
-          I believe that every experience, no matter how small, contributes to
-          my development, and I am excited to take on new projects that will
-          allow me to apply what I have learned while also gaining valuable
-          experience. I look forward to connecting with like-minded individuals
-          and contributing to meaningful initiatives.
-        </p>
-        <br /><br /><br />
-        <hr />
+          <p>
+            I believe that every experience, no matter how small, contributes to
+            my development, and I am excited to take on new projects that will
+            allow me to apply what I have learned while also gaining valuable
+            experience. I look forward to connecting with like-minded
+            individuals and contributing to meaningful initiatives.
+          </p>
+        </div>
       </section>
-      <br /><br /><br />
+      <hr class="section-divider" />
 
       <section>
-        <h4>EXPERIENCE</h4>
-        <br />
-        <div>
+        <h4 class="sub-title">EXPERIENCE</h4>
+        <div class="content">
           <p>Aspiring Software Developer | Student</p>
           <p>
             Currently pursuing academic studies and honing skills in software
@@ -73,15 +85,13 @@
             or view mywork.
           </p>
         </div>
-        <br /><br /><br />
-        <hr />
+        <hr class="section-divider" />
       </section>
-      <br /><br /><br />
 
       <section>
-        <h4>EDUCATION</h4>
-        <br />
-        <div>
+        <h4 class="sub-title">EDUCATION</h4>
+
+        <div class="study-details">
           <p>Graduate Diploma in Software Engineering</p>
           <hr />
           <div>
@@ -90,106 +100,93 @@
               alt="image"
               style="width: 60px; height: 60px"
             />
-          </div>
-          <div>
-            <p>Institute of Software Engineering - IJSE (Galle, Sri Lanka)</p>
-            <br />
-            <p>2024-2026</p>
+            <div class="edu-details">
+              <p>Institute of Software Engineering - IJSE (Galle, Sri Lanka)</p>
+              <p>2024-2026</p>
+            </div>
           </div>
         </div>
-        <br /><br /><br />
-        <hr />
+        <hr class="section-divider" />
       </section>
-      <br /><br /><br />
 
       <section>
-        <h4>TECHNICAL SKILLS</h4>
-        <br />
-        <div>
+        <h4 class="sub-title">TECHNICAL SKILLS</h4>
+        <div class="skill-container">
           <div>
             <label for="java">Java</label>
             <br />
-            <progress value="90" max="100"></progress>
+            <progress value="90" max="100" class="skill-progress"></progress>
           </div>
           <div>
             <label for="python">Python</label>
             <br />
-            <progress value="70" max="100"></progress>
+            <progress value="82" max="100" class="skill-progress"></progress>
           </div>
           <div>
             <label for="javascript">Javascript</label>
             <br />
-            <progress value="50" max="100"></progress>
+            <progress value="87" max="100" class="skill-progress"></progress>
           </div>
           <div>
             <label for="mysql">MySQL</label>
             <br />
-            <progress value="90" max="100"></progress>
+            <progress value="90" max="100" class="skill-progress"></progress>
           </div>
         </div>
-        <br /><br /><br />
-        <hr />
+        <hr class="section-divider" />
       </section>
-      <br /><br /><br />
 
-      <section>
-        <b>Want to create something amazing?</b>
-        <br />
+      <section id="navigate-section">
+        <span>Want to create something amazing?</span>
         <a href="contact-page.html"
-          ><u><b>Let's Team Up</b> <i class="fa-solid fa-arrow-right"></i> </u>
+          >Let's Team Up <i class="fa-solid fa-arrow-right"></i>
         </a>
-        <br /><br /><br />
       </section>
-      <br /><br /><br />
     </main>
 
     <footer>
       <hr />
-      <br /><br />
-      <a href="index.html">LOGO</a>
-      <br /><br />
-      <div>
-        <b>Contact Information</b>
-        <br />
-        Feel free to reach me out anytime.
-        <br />
-        <img
-          src="/assests/images/icon-email.png"
-          alt="email: "
-          style="width: 20px; height: 20px"
-        />
-        chanuthdewhan273@gmail.com
-      </div>
-
-      <br />
 
       <div>
-        <b>Follow me on</b>
-        <br />
-        You can find me below platform.
-        <br />
-        <img
-          src="/assests/images/icon-linkedin.png"
-          alt="contact"
-          style="width: 28px; height: 28px"
-        />
-        <img
-          src="/assests/images/icon-github.png"
-          alt="contact"
-          style="width: 28px; height: 28px"
-        />
+        <a href="index.html" class="logo">Chadew</a>
+
+        <ul>
+          <li>Contact Information -</li>
+          <li>Feel free to reach me out anytime.</li>
+          <li>
+            <span class="profiles">
+              <img
+                src="/assests/images/icon-email.png"
+                alt="email-icon "
+                class="footer-icon"
+                style="margin-right: 10px"
+              />
+              chanuthdewhan273@gmail.com</span
+            >
+          </li>
+        </ul>
+
+        <ul>
+          <li>Follow me on -</li>
+          <li>You can find me below platform.</li>
+          <li>
+            <span
+              ><img
+                src="/assests/images/icon-linkedin.png"
+                alt="linkedin-icon"
+                class="footer-icon" />
+              <img
+                src="/assests/images/icon-github.png"
+                alt="github-icon"
+                class="footer-icon"
+            /></span>
+          </li>
+        </ul>
       </div>
-      <br />
-      <a href="/contact-page.html">
-        <div>
-          <img
-            src="/assests/images/contact.png"
-            alt="contact"
-            style="width: 60px; height: 60px"
-          />
-        </div>
-      </a>
-      <p>&copy; Alright reserved.</p>
+
+      <span id="copyright-notice"
+        >&copy; 2025 Chanuth Dewhan. Alright reserved.</span
+      >
     </footer>
   </body>
 </html>

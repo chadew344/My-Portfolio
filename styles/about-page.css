@@ -1,0 +1,98 @@
+section {
+  width: 100%;
+  margin-top: clamp(72px, 5vw, 145px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* margin: 0 clamp(10px, 5vw, 100px); */
+}
+
+.sub-title {
+  font-size: clamp(18px, 3vw, 30px);
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+}
+
+.content {
+  padding: 0 clamp(0px, 10vw, 140px);
+}
+
+.section-divider {
+  width: 100%;
+  margin-top: clamp(50px, 5vw, 80px);
+}
+
+#about-section p:nth-child(3) {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0;
+}
+
+.study-details {
+  background-color: rgba(217, 217, 217, 0.5);
+  border-radius: 20px;
+  padding: 0 clamp(0px, 10vw, 140px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.study-details img {
+  width: clamp(45px, 5vw, 65px);
+  border-radius: 50%;
+  margin-right: clamp(10px, 5vw, 40px);
+}
+
+.study-details > p {
+  font-size: clamp(18px, 3vw, 30px);
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.study-details hr {
+  width: 100%;
+  margin: 0;
+}
+
+.study-details div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.study-details .edu-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.study-details .edu-details p {
+  text-align: left;
+}
+
+.study-details .edu-details p:first-child {
+  font-size: clamp(14px, 4vw, 24px);
+  margin-bottom: 2px;
+}
+
+.study-details .edu-details p:last-child {
+  color: grey;
+  font-size: clamp(12px, 3vw, 20px);
+  margin-top: 0;
+}
+
+.skill-container {
+  width: calc(100% - clamp(0px, 18vw, 280px));
+  margin: 0 clamp(0px, 5vw, 140px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: clamp(20px, 5vw, 50px);
+}
+
+.skill-container .skill-progress {
+  width: 90%;
+}
