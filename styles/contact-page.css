@@ -1,5 +1,5 @@
 section {
-  width: 60%;
+  width: 70%;
   margin-top: clamp(72px, 5vw, 145px);
   display: flex;
   flex-direction: column;
@@ -80,4 +80,14 @@ section h4 {
 
 #contact-form button:focus {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (max-width: 1024px) {
+  #contact-form div:first-child {
+    flex-direction: column;
+  }
+
+  #contact-form div:first-child .field-box {
+    width: 100%;
+  }
 }
