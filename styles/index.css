@@ -1,80 +1,3 @@
-/* body {
-  margin: 0;
-  overflow-x: hidden;
-  background-color: rgb(238, 231, 219);
-  font-family: "Petrona", serif;
-  font-size: clamp(18px, 3vw, 24px);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-main {
-  width: 80vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-header {
-  padding-top: 5px;
-  width: 80vw;
-  margin: 0 10vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-h2 {
-  font-family: "Playfair Display", serif;
-  font-size: clamp(30px, 5vw, 60px);
-  white-space: nowrap;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: font-weight 0.3s ease-in-out, transform 1s ease-in-out 1s;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.logo {
-  font-family: "Qwigley", cursive;
-  font-weight: bold;
-  font-size: 5rem;
-  transition: opacity 1s ease-in-out;
-}
-
-.logo:hover {
-  opacity: 0.5;
-}
-
-nav ul li {
-  margin-left: clamp(30px, 7vw, 120px);
-  display: inline;
-  font-family: "Petrona", serif;
-}
-
-.container {
-  width: 100%;
-  height: 90%;
-  display: grid;
-  column-gap: clamp(30px, 5vw, 50px);
-}
-
-#nav-links a:hover {
-  font-weight: bold;
-  transform: scale(1.5);
-} */
-
 #hero-section {
   display: flex;
   align-items: flex-end;
@@ -91,6 +14,20 @@ nav ul li {
   align-items: flex-start;
   justify-content: baseline;
   margin-bottom: clamp(0px, 10vw, 200px);
+}
+
+#hero-section div :not(:first-child) {
+  animation: fade-in 2.5s ease-in-out 1 0.2s both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .role {
@@ -135,6 +72,35 @@ nav ul li {
   width: 100%;
   height: auto;
   max-width: 600px;
+  animation: img-fade-in 2s ease-in-out 1 0.5s both;
+}
+
+@keyframes img-fade-in {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+#myName {
+  animation: tracking-in-expand 2s ease-in-out 1 0.2s both;
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 section:not(#hero-section) {
