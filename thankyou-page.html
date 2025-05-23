@@ -21,22 +21,20 @@
 
     <link rel="stylesheet" href="/styles/style.css" />
     <link rel="stylesheet" href="/styles/contact-page.css" />
+    <style>
+      body {
+        height: 100vh;
+        justify-content: space-between;
+      }
+
+      p {
+        line-height: 32px;
+      }
+    </style>
   </head>
   <body>
     <header>
       <a href="/index.html" class="logo">Chadew</a>
-      <nav>
-        <ul id="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/about-page.html">About</a></li>
-          <li><a href="/#project-section">Project</a></li>
-          <li><a href="/contact-page.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <button onclick="openMenuPage()" id="burger-icon">
-        <i class="fa-solid fa-bars"></i>
-      </button>
     </header>
     <a href="/contact-page.html" id="contact-link">
       <i class="fa-regular fa-envelope"></i>
@@ -44,50 +42,11 @@
 
     <main>
       <section>
-        <h4>GET IN TOUCH — LET’S WORK TOGETHER</h4>
-
-        <form
-          action="https://formsubmit.co/chanuthdewhan273@gmail.com"
-          method="POST"
-          id="contact-form"
-        >
-          <div>
-            <div class="field-box">
-              <label for="submitter-name">Your Name*</label>
-              <input
-                type="text"
-                name="submitter-name"
-                id="submitter-name"
-                required
-              />
-            </div>
-            <div class="field-box">
-              <label for="submitter-email">Your Email*</label>
-              <input
-                type="text"
-                name="submitter-email"
-                id="submitter-email"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="field-box">
-            <label for="subject">Subject*</label>
-            <input type="text" name="subject" id="subject" required />
-          </div>
-          <div class="field-box">
-            <label for="subject">Message*</label>
-            <textarea name="message" id="message" required></textarea>
-          </div>
-          <input type="hidden" name="_captcha" value="false" />
-          <input
-            type="hidden"
-            name="_next"
-            value="https://chanuth-dewhan.web.app/thankyou-page.html"
-          />
-          <button type="submit">Submit</button>
-        </form>
+        <h4>Thanks for reaching out! <span style="color: black">🙌</span></h4>
+        <p>
+          I appreciate you taking the time to get in touch. <br />Whether it's a
+          project idea, collaboration, or just a hello I'll be in touch soon.
+        </p>
       </section>
     </main>
 
@@ -134,11 +93,5 @@
         >&copy; 2025 Chanuth Dewhan. Alright reserved.</span
       >
     </footer>
-
-    <script>
-      function openMenuPage() {
-        window.location.href = "/menu-page.html";
-      }
-    </script>
   </body>
 </html>
