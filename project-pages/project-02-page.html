@@ -43,51 +43,238 @@
     </a>
 
     <main>
-      <section id="project-detail">
-        <div>
-          <h4>Project</h4>
-          <h2>Project_Name</h2>
+      <section id="project-hero">
+        <h4>Personal Project</h4>
+        <h1>Finace Manager</h1>
 
-          <h4>My Role</h4>
-          <p>What is my involvement in this project?</p>
-
-          <h4>Year</h4>
-          <p>Project timeline</p>
-        </div>
-
-        <div>
-          <p>Brief explanation of the project.</p>
-
-          <div id="project-resource-links">
-            <img
-              src="/assests/images/icon-github.png"
-              alt="github-icon"
-              style="width: 25px; height: 25px"
-            />
-            <a href="" target="_blank">Github Link</a>
+        <div class="project-meta">
+          <div class="meta-item">
+            <h4>Role</h4>
+            <p>Full Stack Developer</p>
+          </div>
+          <div class="meta-item">
+            <h4>Year</h4>
+            <p>2025</p>
+          </div>
+          <div class="meta-item">
+            <h4>Tech Stack</h4>
+            <p>Spring Boot</p>
           </div>
         </div>
       </section>
 
-      <section>
-        <div>
+      <section id="project-overview">
+        <h3>Project Overview</h3>
+        <p class="lead-text">
+          A robust, full-stack financial management application designed to
+          provide comprehensive control over personal and shared finances. The
+          system manages core financial transactions (Income/Expense),
+          categorized budgeting, and complex multi-user access for collaborative
+          financial management.
+        </p>
+
+        <div class="tech-stack-badges">
+          <div class="stack-category">
+            <span class="category-label">Backend</span>
+            <div class="badges">
+              <span class="tech-badge">Java Spring Boot</span>
+              <span class="tech-badge">MySQL</span>
+            </div>
+          </div>
+          <div class="stack-category">
+            <span class="category-label">Frontend</span>
+            <div class="badges">
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">HTML/CSS</span>
+              <span class="tech-badge">Bootstrap</span>
+              <span class="tech-badge">Chart.js</span>
+            </div>
+          </div>
+          <div class="stack-category">
+            <span class="category-label">Integration</span>
+            <div class="badges">
+              <span class="tech-badge">PayHere Sandbox</span>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="features-section">
+          <h4>Key Features & Technical Highlights</h4>
+
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Role-Based Access Control (RBAC)</h5>
+                <p>
+                  Secure multi-user environments via the
+                  <code>SharedAccountUser</code> entity, enforcing distinct
+                  roles (Owner, Admin, Member) to control account management and
+                  transaction access.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Advanced Reporting Engine</h5>
+                <p>
+                  Generates real-time financial summaries and
+                  professional-quality, customized PDF reports using Thymeleaf
+                  for templating, OpenHTMLToPDF for reliable conversion, and
+                  JFreeChart for backend-generated visual charts embedded via
+                  Base64 data URIs.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Asynchronous Processing</h5>
+                <p>
+                  Utilizes the <code>@EnableAsync</code> mechanism to execute
+                  resource-intensive tasks, such as email invitation sending, in
+                  a separate thread—preventing UI freeze and ensuring a highly
+                  responsive user experience.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Structured Architecture</h5>
+                <p>
+                  Implemented a clear layered architecture in Spring Boot,
+                  separating concerns into Controller, Service, and Repository
+                  layers for high maintainability and testability.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-bell"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Real-Time Notifications</h5>
+                <p>
+                  Delivers instant updates through WebSocket connections,
+                  providing users with live notifications for critical financial
+                  events. Complemented by email notifications using
+                  <code>spring-boot-starter-mail</code> for important alerts and
+                  account activity summaries.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Email Integration</h5>
+                <p>
+                  Seamless email delivery system powered by
+                  <code>spring-boot-starter-mail</code>, sending automated
+                  notifications for account invitations, transaction alerts,
+                  budget thresholds, and comprehensive financial reports
+                  directly to users' inboxes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-links">
+          <a
+            href="https://github.com/chadew344/Finance-Manager.git"
+            target="_blank"
+            class="project-link-btn"
+          >
+            <img src="/assests/images/icon-github.png" alt="github-icon" />
+            View on GitHub
+          </a>
+        </div>
+      </section>
+
+      <section id="project-images">
+        <h3>Project Screenshots</h3>
+        <div class="gallery">
           <img
-            src=""
-            alt="project-image"
-            style="width: 1180px; height: 650px"
+            src="/assests/images/project-images/finance_manager/finance-manager-ui-1.png"
+            alt="Finance Manager Screenshot 1"
           />
           <img
-            src=""
-            alt="project-image"
-            style="width: 1180px; height: 500px"
+            src="/assests/images/project-images/finance_manager/finance-manager-ui-2.png"
+            alt="Finance Manager Screenshot 2"
+          />
+          <img
+            src="/assests/images/project-images/finance_manager/finance-manager-ui-3.png"
+            alt="Finance Manager Screenshot 3"
+          />
+          <img
+            src="/assests/images/project-images/finance_manager/finance-manager-ui-4.png"
+            alt="Finance Manager Screenshot 4"
+          />
+          <img
+            src="/assests/images/project-images/finance_manager/finance-manager-ui-5.png"
+            alt="Finance Manager Screenshot 5"
+          />
+
+          <img
+            src="/assests/images/project-images/finance_manager/finance-manager-ui-6.png"
+            alt="Finance Manager Screenshot 6"
+          />
+
+          <img
+            src="/assests/images/project-images/finance_manager/finance-manager-ui-12.png"
+            alt="Finance Manager Screenshot 12"
+          />
+
+          <img
+            src="/assests/images/project-images/finance_manager/finance-manager-ui-7.png"
+            alt="Finance Manager Screenshot 7"
+          />
+
+          <img
+            src="/assests/images/project-images/finance_manager/finance-manager-ui-8.png"
+            alt="Finance Manager Screenshot 8"
+          />
+
+          <img
+            src="/assests/images/project-images/finance_manager/finance-manager-ui-9.png"
+            alt="Finance Manager Screenshot 9"
+          />
+
+          <img
+            src="/assests/images/project-images/finance_manager/finance-manager-ui-10.png"
+            alt="Finance Manager Screenshot 10"
+          />
+
+          <img
+            src="/assests/images/project-images/finance_manager/finance-manager-ui-11.png"
+            alt="Finance Manager Screenshot 11"
           />
         </div>
       </section>
 
       <section id="navigate-section">
-        <span>Thanks for watching</span>
+        <span>Thanks for exploring this project</span>
         <a href="/#project-section"
-          >Next Project <i class="fa-solid fa-arrow-right"></i>
+          >View More Projects <i class="fa-solid fa-arrow-right"></i>
         </a>
       </section>
     </main>
