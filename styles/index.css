@@ -173,7 +173,8 @@ section:not(#hero-section) {
 }
 
 #project-section .container {
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* 400px */
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   max-width: 1500px;
   margin: 0 auto;
 }
